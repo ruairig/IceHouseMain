@@ -14,6 +14,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap-3.3.6-dist/css/login.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -55,6 +56,53 @@
     </div>
 </nav>
 
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="panel panel-login">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <a href="#" class="active" id="login-form-link">Login</a>
+                        </div>
+                        <div class="col-xs-6">
+                            <a href="#" id="register-form-link">Register</a>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <form id="login-form" action="<?php $_SERVER['PHP_SELF']; ?>" method="post" role="form"
+                                  style="display: block;">
+                                <div class="form-group">
+                                    <input type="text" name="email" id="login_email" tabindex="1" class="form-control" placeholder="Email" value="" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" name="password" id="login_password" tabindex="2" class="form-control" placeholder="Password" required>
+                                </div>
+                                <!--                                <div class="form-group text-center">-->
+                                <!--                                    <input type="checkbox" tabindex="3" class="" name="remember" id="remember">-->
+                                <!--                                    <label for="remember"> Remember Me</label>-->
+                                <!--                                </div>-->
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-sm-offset-3">
+                                            <input type="submit" name="login" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Log In">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="text-center">
+                                                <a href="http://wonderblog.azurewebsites.net/testing/login.php" tabindex="5" class="forgot-password">Forgot Password?</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
