@@ -34,112 +34,25 @@ l
 
 <body>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Project name</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <form class="navbar-form navbar-right">
-                <div class="form-group">
-                    <input type="text" placeholder="Email" class="form-control">
-                </div>
-                <div class="form-group">
-                    <input type="password" placeholder="Password" class="form-control">
-                </div>
-                <button type="submit" class="btn btn-success">Sign in</button>
-            </form>
-        </div><!--/.navbar-collapse -->
-    </div>
-</nav>
+<body>
 
 <div class="container">
-    <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-            <div class="panel panel-login">
-                <div class="panel-heading">
-                    <div class="row">
-                        <div class="col-xs-6">
-                            <a href="#" class="active" id="login-form-link">Login</a>
-                        </div>
-                        <div class="col-xs-6">
-                            <a href="#" id="register-form-link">Register</a>
-                        </div>
-                    </div>
-                    <hr>
-                </div>
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <form id="login-form" action="<?php $_SERVER['PHP_SELF']; ?>" method="post" role="form"
-                                  style="display: block;">
-                                <div class="form-group">
-                                    <input type="text" name="email" id="login_email" tabindex="1" class="form-control" placeholder="Email" value="" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="password" name="password" id="login_password" tabindex="2" class="form-control" placeholder="Password" required>
-                                </div>
-                                <!--                                <div class="form-group text-center">-->
-                                <!--                                    <input type="checkbox" tabindex="3" class="" name="remember" id="remember">-->
-                                <!--                                    <label for="remember"> Remember Me</label>-->
-                                <!--                                </div>-->
-                                <div class="form-group">
-                                    <div class="row">
-                                        <div class="col-sm-6 col-sm-offset-3">
-                                            <input type="submit" name="login" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Log In">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <div class="text-center">
-                                                <a href="http://wonderblog.azurewebsites.net/testing/login.php" tabindex="5" class="forgot-password">Forgot Password?</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                            <!-- REGISTER FORM -->
-                            <form id="register-form" action="<?php $_SERVER['PHP_SELF']; ?>" method="post" role="form"
-                                  style="display: none;">
-                                <div class="form-group">
-                                    <input type="text" name="fname" id="fname" tabindex="1" class="form-control" placeholder="First name" value="" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" name="lname" id="lname" tabindex="2" class="form-control" placeholder="Last name" value="" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" name="email" id="email" tabindex="3" class="form-control" placeholder="Email Address" value="" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="password" name="password" id="password" tabindex="4" class="form-control" placeholder="Password" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="password" name="password_repeat" id="password_repeat" tabindex="5" class="form-control" placeholder="Password repeat" required>
-                                </div>
-                                <div class="form-group">
-                                    <div class="row">
-                                        <div class="col-sm-6 col-sm-offset-3">
-                                            <input type="submit" name="register" id="register" tabindex="6" class="form-control btn btn-register"
-                                                   value="Register Now!">
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+    <form class="form-signin">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="remember-me"> Remember me
+            </label>
         </div>
-    </div>
-</div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    </form>
+
+</div> <!-- /container -->
 
 </body>
 </html>
