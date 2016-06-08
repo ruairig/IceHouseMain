@@ -15,6 +15,7 @@
     <!-- Bootstrap core CSS -->
     <link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="bootstrap-3.3.6-dist/css/login.css" rel="stylesheet">
+    <script src="bootstrap-3.3.6-dist/js/login.js"></scr
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
