@@ -103,6 +103,41 @@
                                     </div>
                                 </div>
                             </form>
+                            <!-- REGISTER FORM -->
+                            <form id="register-form" action="<?php $_SERVER['PHP_SELF']; ?>" method="post" role="form"
+                                  style="display: none;">
+                                <div class="form-group">
+                                    <input type="text" name="fname" id="fname" tabindex="1" class="form-control" placeholder="First name" value="" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="lname" id="lname" tabindex="2" class="form-control" placeholder="Last name" value="" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" id="email" tabindex="3" class="form-control" placeholder="Email Address" value="" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" name="password" id="password" tabindex="4" class="form-control" placeholder="Password" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" name="password_repeat" id="password_repeat" tabindex="5" class="form-control" placeholder="Password repeat" required>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-sm-offset-3">
+                                            <input type="submit" name="register" id="register" tabindex="6" class="form-control btn btn-register"
+                                                   value="Register Now!">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
